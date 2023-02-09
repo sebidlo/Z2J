@@ -1,2 +1,5 @@
 # Z2J
-Ćwiczenia z Zero to Junior
+Ćwiczenia z z kursu Zero to Junior
+
+https://zerotojunior.dev/premium/
+
