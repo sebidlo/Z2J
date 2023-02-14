@@ -2,6 +2,9 @@
 # block comment
 # block comment
 
+"""
+Multilines block comment
+"""
 
 print("Hello World")
 
