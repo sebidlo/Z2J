@@ -19,3 +19,8 @@ string1 = 'Hello, world'
 string2 = "1234"
 print(string1)
 print(string2)
+
+string3 = "We're #1!"
+string4 = 'I said, "Put it over by the llama."'
+print(string3)
+print(string4)
