@@ -20,6 +20,11 @@ string2 = "1234"
 print(string1)
 print(string2)
 
+"""
+The quotes surrounding a string are called delimiters because they tell Python where a string begins and where it ends.
+When one type of quotes is used as the delimiter, the other type of quote can be used inside of the string
+"""
+
 string3 = "We're #1!"
 string4 = 'I said, "Put it over by the llama."'
 print(string3)
