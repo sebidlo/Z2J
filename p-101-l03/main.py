@@ -1,3 +1,5 @@
+# This is a block comment.
+
 print("Hello World")
 
 text_variable = "Hellooo !!!"
