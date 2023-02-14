@@ -1,4 +1,7 @@
 # This is a block comment.
+# block comment
+# block comment
+
 
 print("Hello World")
 
