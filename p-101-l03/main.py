@@ -29,3 +29,9 @@ string3 = "We're #1!"
 string4 = 'I said, "Put it over by the llama."'
 print(string3)
 print(string4)
+
+# Determine the Length of a String
+
+letters = "abc"
+num_letters = len(letters)
+print(num_letters)
