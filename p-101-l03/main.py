@@ -57,3 +57,12 @@ print("""An example of a
 ...          string that spans across multiple lines
 ...                 that also preserves whitespace.""")
 '''
+string1 = "abra"
+string2 = "cadabra"
+magic_string = string1 + string2
+print(magic_string)
+
+first_name = "Sebastian"
+last_name = "Kycia"
+full_name = first_name + " " + last_name
+print(full_name)
