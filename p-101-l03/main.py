@@ -78,3 +78,7 @@ print(flavor[0:3])
 print(flavor[-9:-6])
 print(flavor[-9:0])
 print(flavor[-9:])
+
+word = "goal"
+word[0] = "f"
+print(word)
