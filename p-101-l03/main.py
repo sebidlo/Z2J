@@ -66,3 +66,8 @@ first_name = "Sebastian"
 last_name = "Kycia"
 full_name = first_name + " " + last_name
 print(full_name)
+
+flavor = "apple pie"
+print(flavor[1])
+print(flavor[-1])
+print(len(flavor))
