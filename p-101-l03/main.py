@@ -74,3 +74,4 @@ print(len(flavor))
 
 first_three_letters = flavor[0] + flavor[1] + flavor[2]
 print(first_three_letters)
+print(flavor[0:3])
