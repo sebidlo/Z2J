@@ -90,3 +90,6 @@ print(name)
 print(name.lower())
 print(name.upper())
 print(len(name))
+name = "Jean-luc Picard         "
+print(name.rstrip())
+print(name)
