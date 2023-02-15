@@ -80,5 +80,7 @@ print(flavor[-9:0])
 print(flavor[-9:])
 
 word = "goal"
-word[0] = "f"
+# word[0] = "f"
+print(word)
+word = "f" + word[1:]  # modify a string by creating a new string
 print(word)
