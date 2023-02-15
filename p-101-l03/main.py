@@ -56,7 +56,7 @@ print(paragraph2)
 print("""An example of a
 ...          string that spans across multiple lines
 ...                 that also preserves whitespace.""")
-'''
+
 string1 = "abra"
 string2 = "cadabra"
 magic_string = string1 + string2
@@ -93,3 +93,8 @@ print(len(name))
 name = "Jean-luc Picard         "
 print(name.rstrip())
 print(name)
+'''
+starship = "Enterprise"
+print(starship)
+print(starship.startswith("en"))
+print(starship.endswith("rise"))
