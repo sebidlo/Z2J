@@ -84,3 +84,9 @@ word = "goal"
 print(word)
 word = "f" + word[1:]  # modify a string by creating a new string
 print(word)
+
+name = "Jean-luc Picard"
+print(name)
+print(name.lower())
+print(name.upper())
+print(len(name))
