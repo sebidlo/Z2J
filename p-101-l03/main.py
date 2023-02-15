@@ -71,3 +71,6 @@ flavor = "apple pie"
 print(flavor[1])
 print(flavor[-1])
 print(len(flavor))
+
+first_three_letters = flavor[0] + flavor[1] + flavor[2]
+print(first_three_letters)
