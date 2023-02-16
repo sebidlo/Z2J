@@ -133,8 +133,19 @@ Write a script named first_letter.py that first prompts the user for
 input by using the string "Tell me your password:" The script should
 then determine the first letter of the user’s input, convert that letter
 to upper-case, and display it back.
-'''
+
 prompt = "Tell me your password: "
 user_input = input(prompt)
 first_caracter = user_input[0:1]
 print("The first letter you entered was: " + first_caracter.upper())
+
+num = "2"
+print(num + num)
+num = "12"
+print(num * 3)
+'''
+num = input("Enter a number to be doubled: ")
+doubled_num = num * 2
+print(doubled_num)
+print(int(doubled_num))
+print(float(doubled_num))
