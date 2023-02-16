@@ -93,8 +93,36 @@ print(len(name))
 name = "Jean-luc Picard         "
 print(name.rstrip())
 print(name)
-'''
+
 starship = "Enterprise"
 print(starship)
 print(starship.startswith("en"))
 print(starship.endswith("rise"))
+
+prompt = "Hey, what's up? "
+user_input = input(prompt)
+print("You said:", user_input)
+'''
+'''
+1. Write a script that takes input from the user and displays that input
+back.
+'''
+prompt1 = "Type something "
+user_input1 = input(prompt1)
+print(user_input1)
+'''
+2. Write a script that takes input from the user and displays the input
+in lowercase.
+'''
+prompt2 = "Write something and I'll make it lowercase"
+user_input2 = input(prompt2)
+print(user_input2.lower())
+
+'''
+3. Write a script that takes input from the user and displays the number
+of characters inputted.
+'''
+prompt3 = "write something and I'll count the letters"
+user_input3 = input(prompt3)
+number_of_caracters = str(len(user_input3))
+print("characters is " + number_of_caracters)
