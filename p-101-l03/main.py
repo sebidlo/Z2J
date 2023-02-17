@@ -143,9 +143,13 @@ num = "2"
 print(num + num)
 num = "12"
 print(num * 3)
-'''
+
 num = input("Enter a number to be doubled: ")
 doubled_num = num * 2
 print(doubled_num)
 print(int(doubled_num))
 print(float(doubled_num))
+'''
+num = "12.0"
+double_num = float(num) * 2
+print(double_num)
