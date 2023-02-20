@@ -149,7 +149,18 @@ doubled_num = num * 2
 print(doubled_num)
 print(int(doubled_num))
 print(float(doubled_num))
-'''
+
 num = "12.0"
 double_num = float(num) * 2
 print(double_num)
+
+num = input("Enter a number to be doubled: ")
+doubled_num = float(num) * 2
+print(doubled_num)
+'''
+num_pancakes = 10
+print("I am going to eat " + str(num_pancakes) + " pancakes.")
+
+total_pancakes = 10
+pancakes_eaten = 5
+print("Only " + str(total_pancakes - pancakes_eaten) + " pancakes left.")
