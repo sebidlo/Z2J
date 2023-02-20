@@ -153,3 +153,7 @@ print(float(doubled_num))
 num = "12.0"
 double_num = float(num) * 2
 print(double_num)
+
+num = input("Enter a number to be doubled: ")
+doubled_num = float(num) * 2
+print(doubled_num)
