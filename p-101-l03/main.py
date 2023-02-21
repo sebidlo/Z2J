@@ -158,9 +158,74 @@ num = input("Enter a number to be doubled: ")
 doubled_num = float(num) * 2
 print(doubled_num)
 '''
+'''
 num_pancakes = 10
 print("I am going to eat " + str(num_pancakes) + " pancakes.")
 
 total_pancakes = 10
 pancakes_eaten = 5
 print("Only " + str(total_pancakes - pancakes_eaten) + " pancakes left.")
+'''
+
+''' 4.6 Review Exercises
+1. Create a string containing an integer, then convert that string into
+an actual integer object using int(). Test that your new object is
+a number by multiplying it by another number and displaying the result.
+
+number = 20
+int_numer = int(number)
+print(int_numer * 2)
+
+
+2. Repeat the previous exercise, but use a floating-point number and
+float().
+
+number_2 = 20.0
+float_number = float(number_2)
+print(float_number * 2)
+
+
+3. Create a string object and an integer object, then display them sideby-
+side with a single print statement by using the str() function.
+
+string_object = "I drink today"
+string_object_2 = "coffe"
+number_3 = 3
+print(string_object, str(number_3), string_object_2)
+
+
+4. Write a script that gets two numbers from the user using the
+input() function twice, multiplies the numbers together, and
+displays the result. If the user enters 2 and 4, your program should
+print the following text: The product of 2 and 4 is 8.0.
+
+num = input("Enter a number: ")
+num_2 = input("Enter a second number:")
+print("The product of number and second number is ", str(int(num) * int(num_2)))
+
+n = 30
+m = 34
+print(f"{n * m}")
+
+'''
+'''
+1. Create a float object named weight with the value 0.2, and create
+a string object named animal with the value "newt". Then use these
+objects to print the following string using only string concatenation:
+0.2 kg is the weight of the newt.
+'''
+wight = 0.2
+animal = "newt"
+print(str(wight) + " kg is the weight of the " + str(animal) + ".")
+
+'''
+2. Display the same string by using the .format() method and empty
+{} place-holders.
+'''
+print("{} kg is the weight of the {}.".format(wight, animal))
+
+'''
+3. Display the same string using an f-string.
+
+'''
+print(f"{wight} kg is the weight of the {animal}.")
