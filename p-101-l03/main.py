@@ -203,3 +203,6 @@ num = input("Enter a number: ")
 num_2 = input("Enter a second number:")
 print("The product of number and second number is ", str(int(num) * int(num_2)))
 '''
+n = 30
+m = 34
+print(f"{n * m}")
