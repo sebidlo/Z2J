@@ -227,7 +227,7 @@ print("{} kg is the weight of the {}.".format(wight, animal))
 
 
 print(f"{wight} kg is the weight of the {animal}.")
-'''
+
 phrase = "the surprise is in here somewhere"
 print(phrase.find("surprise"))  # find - return index 4
 print(phrase.find("eyjafjallajökull"))  # dosen't find substring return -1
@@ -239,3 +239,17 @@ print(my_story)
 
 my_story = my_story.replace("the truth", "lies")
 print(my_story)
+
+1. In one line of code, display the result of trying to .find() the substring
+"a" in the string "AAA". The result should be -1.
+'''
+'''
+2. Replace every occurrence of the character "s" with "x" in the string
+"Somebody said something to Samantha.".
+'''
+
+'''
+3. Write and test a script that accepts user input using the input()
+function and displays the result of trying to .find() a particular
+letter in that input.
+'''
