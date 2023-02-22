@@ -277,7 +277,7 @@ my_input = my_input.replace("o", "0")
 my_input = my_input.replace("s", "5")
 my_input = my_input.replace("t", "7")
 print(my_input)
-'''
+
 print(type(1))
 print(int("25"))
 print(10000000000000000000000000000000000000000000000000000)
@@ -294,3 +294,20 @@ print(2e400)
 n = 2e400
 print(n)
 print(type(n))
+
+1. Write a script that creates the two variables, num1 and num2. Both
+num1 and num2 should be assigned the integer literal 25,000,000,
+one written with underscored and one without. Print num1 and num2
+on two separate lines.
+'''
+
+'''
+2. Write a script that assigns the floating-point literal 175000.0 to the
+variable num using exponential notation, and then prints num in the
+interactive window.
+'''
+
+'''
+3. In IDLE’s interactive window, try and find the smallest exponent N
+so that 2e<N>, where <N> is replaced with your number, returns inf.
+'''
