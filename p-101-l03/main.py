@@ -264,7 +264,7 @@ my_input = input(
     "Type in some text and I'll check to see if there's an 'a' in there. ")
 print(my_input)
 print(my_input.find("a"))
-'''
+
 # translate 4.9 Challenge
 
 my_input = input("Type in some text:")
@@ -277,3 +277,8 @@ my_input = my_input.replace("o", "0")
 my_input = my_input.replace("s", "5")
 my_input = my_input.replace("t", "7")
 print(my_input)
+'''
+print(type(1))
+print(int("25"))
+print(10000000000000000000000000000000000000000000000000000)
+print(1_000_000)
