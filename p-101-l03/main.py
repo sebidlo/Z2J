@@ -231,3 +231,11 @@ print(f"{wight} kg is the weight of the {animal}.")
 phrase = "the surprise is in here somewhere"
 print(phrase.find("surprise"))  # find - return index 4
 print(phrase.find("eyjafjallajökull"))  # dosen't find substring return -1
+
+my_story = "I'm telling you the truth; nothing but the truth!"
+print(my_story)
+print(my_story.replace("the truth", "lies"))
+print(my_story)
+
+my_story = my_story.replace("the truth", "lies")
+print(my_story)
