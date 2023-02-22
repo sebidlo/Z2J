@@ -265,3 +265,15 @@ my_input = input(
 print(my_input)
 print(my_input.find("a"))
 '''
+# translate 4.9 Challenge
+
+my_input = input("Type in some text:")
+print(my_input)
+my_input = my_input.replace("a", "4")
+my_input = my_input.replace("b", "8")
+my_input = my_input.replace("e", "3")
+my_input = my_input.replace("l", "1")
+my_input = my_input.replace("o", "0")
+my_input = my_input.replace("s", "5")
+my_input = my_input.replace("t", "7")
+print(my_input)
