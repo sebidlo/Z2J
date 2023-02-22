@@ -229,4 +229,5 @@ print("{} kg is the weight of the {}.".format(wight, animal))
 print(f"{wight} kg is the weight of the {animal}.")
 '''
 phrase = "the surprise is in here somewhere"
-print(phrase.find("surprise"))
+print(phrase.find("surprise"))  # find - return index 4
+print(phrase.find("eyjafjallajökull"))  # dosen't find substring return -1
