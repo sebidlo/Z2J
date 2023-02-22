@@ -207,25 +207,73 @@ n = 30
 m = 34
 print(f"{n * m}")
 
-'''
-'''
 1. Create a float object named weight with the value 0.2, and create
 a string object named animal with the value "newt". Then use these
 objects to print the following string using only string concatenation:
 0.2 kg is the weight of the newt.
-'''
+
 wight = 0.2
 animal = "newt"
 print(str(wight) + " kg is the weight of the " + str(animal) + ".")
 
-'''
+
 2. Display the same string by using the .format() method and empty
 {} place-holders.
-'''
+
 print("{} kg is the weight of the {}.".format(wight, animal))
 
-'''
+
 3. Display the same string using an f-string.
 
-'''
+
 print(f"{wight} kg is the weight of the {animal}.")
+
+phrase = "the surprise is in here somewhere"
+print(phrase.find("surprise"))  # find - return index 4
+print(phrase.find("eyjafjallajökull"))  # dosen't find substring return -1
+
+my_story = "I'm telling you the truth; nothing but the truth!"
+print(my_story)
+print(my_story.replace("the truth", "lies"))
+print(my_story)
+
+my_story = my_story.replace("the truth", "lies")
+print(my_story)
+
+1. In one line of code, display the result of trying to .find() the substring
+"a" in the string "AAA". The result should be -1.
+
+text = "AAA"
+print(text.find("a"))
+
+
+2. Replace every occurrence of the character "s" with "x" in the string
+"Somebody said something to Samantha.".
+
+my_text = "Somebody said something to Samantha."
+print(my_text)
+my_text = my_text.replace("s", "x")
+print(my_text)
+
+
+3. Write and test a script that accepts user input using the input()
+function and displays the result of trying to .find() a particular
+letter in that input.
+
+my_input = input(
+    "Type in some text and I'll check to see if there's an 'a' in there. ")
+print(my_input)
+print(my_input.find("a"))
+'''
+# translate 4.9 Challenge
+
+my_input = input("Type in some text:")
+print(my_input)
+my_input = my_input.replace("a", "4")
+my_input = my_input.replace("b", "8")
+my_input = my_input.replace("e", "3")
+my_input = my_input.replace("l", "1")
+my_input = my_input.replace("o", "0")
+my_input = my_input.replace("s", "5")
+my_input = my_input.replace("t", "7")
+print(my_input)
