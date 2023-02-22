@@ -290,3 +290,7 @@ print(1_000_000.0)
 print(1e6)
 print(200000000000000000.0)
 print(1e-4)
+print(2e400)
+n = 2e400
+print(n)
+print(type(n))
