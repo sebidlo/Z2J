@@ -242,25 +242,26 @@ print(my_story)
 
 1. In one line of code, display the result of trying to .find() the substring
 "a" in the string "AAA". The result should be -1.
-'''
+
 text = "AAA"
 print(text.find("a"))
 
-'''
+
 2. Replace every occurrence of the character "s" with "x" in the string
 "Somebody said something to Samantha.".
-'''
+
 my_text = "Somebody said something to Samantha."
 print(my_text)
 my_text = my_text.replace("s", "x")
 print(my_text)
 
-'''
+
 3. Write and test a script that accepts user input using the input()
 function and displays the result of trying to .find() a particular
 letter in that input.
-'''
+
 my_input = input(
     "Type in some text and I'll check to see if there's an 'a' in there. ")
 print(my_input)
 print(my_input.find("a"))
+'''
