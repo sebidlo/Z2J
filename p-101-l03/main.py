@@ -319,11 +319,28 @@ so that 2e<N>, where <N> is replaced with your number, returns inf.
 print(2e300)
 print(2e307)
 print(2e308)
-'''
+
 print(2 + 3)  # Addition +
 print(1.0 + 2)  # Result int + float = float
 
 print(5 - 3)  # Subtraction
 print(5 - 2.0)  # result float - int = float
-
 print(1 - -3)
+
+print(3 * 3)  # Multiplication
+print(2 * 8.0)
+
+print(9 / 3)  # Division
+print(5.0 / 2)
+print(5 / 2.0)
+
+print(int(8.0 / 2))
+print(5.0 // 2)  # Integer Division
+print(-3 // 2)
+'''
+print(2 ** 2)
+print(2 ** 3)
+print(3 ** 1.5)
+print(9 ** 0.5)
+print(2 ** -1)
+print(2 ** -2)
