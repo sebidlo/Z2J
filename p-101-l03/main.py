@@ -325,5 +325,7 @@ print(1.0 + 2)  # Result int + float = float
 
 print(5 - 3)  # Subtraction
 print(5 - 2.0)  # result float - int = float
-
 print(1 - -3)
+
+print(3 * 3)  # Multiplication
+print(2 * 8.0)
