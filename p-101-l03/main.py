@@ -329,3 +329,7 @@ print(1 - -3)
 
 print(3 * 3)  # Multiplication
 print(2 * 8.0)
+
+print(9 / 3)  # Division
+print(5.0 / 2)
+print(5 / 2.0)
