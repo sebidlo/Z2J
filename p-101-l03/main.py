@@ -337,10 +337,17 @@ print(5 / 2.0)
 print(int(8.0 / 2))
 print(5.0 // 2)  # Integer Division
 print(-3 // 2)
-'''
+
 print(2 ** 2)
 print(2 ** 3)
 print(3 ** 1.5)
 print(9 ** 0.5)
 print(2 ** -1)
 print(2 ** -2)
+'''
+print(5 % 3)
+print(20 % 7)
+
+print(5 % -3)
+print(-5 % 3)
+print(-5 % -3)
