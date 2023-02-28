@@ -344,10 +344,30 @@ print(3 ** 1.5)
 print(9 ** 0.5)
 print(2 ** -1)
 print(2 ** -2)
-'''
+
 print(5 % 3)
 print(20 % 7)
 
 print(5 % -3)
 print(-5 % 3)
 print(-5 % -3)
+'''
+'''
+Write a script called exponent.py that receives two numbers from the
+user and displays the first number raised to the power of the second
+number.
+A sample run of the program should look like this (with example input
+that has been provided by the user included below):
+
+n = 30
+m = 34
+print(f"{n * m}")
+'''
+num = input("Enter a number: ")
+num_2 = input("Enter a second number:")
+print("The product of number and second number is ",
+      str(float(num) ** float(num_2)))
+
+'''
+
+'''
