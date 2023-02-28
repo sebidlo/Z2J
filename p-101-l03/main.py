@@ -362,12 +362,14 @@ that has been provided by the user included below):
 n = 30
 m = 34
 print(f"{n * m}")
-'''
+
 num = input("Enter a number: ")
 num_2 = input("Enter a second number:")
 print("The product of number and second number is ",
       str(float(num) ** float(num_2)))
 
 '''
-
-'''
+num = input("Enter a number: ")
+num_2 = input("Enter a second number:")
+print("The product of number and second number is ",
+      str(float(num) + float(num_2)))
