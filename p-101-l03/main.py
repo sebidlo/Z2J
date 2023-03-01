@@ -374,11 +374,11 @@ num_2 = input("Enter a second number:")
 print("The product of number and second number is ",
       str(float(num) + float(num_2)))
 
-'''
+
 print(round(2.5))
 print(round(3.5))
 
-'''
+
 When you round ties to even, you first look at the digit one decimal place to the left of the last digit in the tie. If that digit is even, you round down. If the digit is odd, you round up. That’s why 2.5 rounds down to 2 and 3.5 round up to 4. Rounding ties to even is the rounding strategy recommended for floating-point numbers by the IEEE (Institute of Electrical and Electronics Engineers) because it helps limit the impact rounding has on operations involving lots of numbers.
 The IEEE maintains a standard called IEEE 754 for how
 floating-point numbers are dealt with on a computer.
@@ -388,7 +388,9 @@ IEEE utrzymuje standard o nazwie IEEE 754 dotyczący sposobu
 liczby zmiennoprzecinkowe są obsługiwane na komputerze.
 Został opublikowany w 1985 roku i nadal jest powszechnie używany przez producentów sprzętu.
 
-'''
 
 print(round(3.14159, 3))
 print(round(2.71828, 2))
+'''
+print(abs(3))
+print(abs(-5.0))
