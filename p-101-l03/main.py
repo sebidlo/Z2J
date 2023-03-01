@@ -412,6 +412,12 @@ program should look like this:
 Enter a number: 5.432
 5.432 rounded to 2 decimal places is 5.43
 '''
+number = input(
+    "Podaj liczbę z kilkoma miejsczami po przecinku, ja zaokrągle ją do 2 miejsc: ")
+number2 = round(float(number), 2)
+print(f" {number} routed to 2 decimal places is {number2}")
+# print(str(round(number, 2)))
+
 
 '''
 2. Write a script that asks the user to input a number and then displays
