@@ -391,6 +391,10 @@ Został opublikowany w 1985 roku i nadal jest powszechnie używany przez produce
 
 print(round(3.14159, 3))
 print(round(2.71828, 2))
-'''
+
 print(abs(3))
 print(abs(-5.0))
+'''
+
+print(pow(2, 4))
+print(pow(2, -3))
