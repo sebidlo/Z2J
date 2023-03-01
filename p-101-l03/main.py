@@ -394,8 +394,13 @@ print(round(2.71828, 2))
 
 print(abs(3))
 print(abs(-5.0))
-'''
+
 
 print(pow(2, 4))
 print(pow(2, -3))
 print(pow(2, 3, 2))  # 2 ** 8 % 2
+'''
+n = 2.5
+print(n.is_integer())
+n = 2.0
+print(n.is_integer())
