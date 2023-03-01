@@ -399,8 +399,37 @@ print(abs(-5.0))
 print(pow(2, 4))
 print(pow(2, -3))
 print(pow(2, 3, 2))  # 2 ** 8 % 2
-'''
+
 n = 2.5
 print(n.is_integer())
 n = 2.0
 print(n.is_integer())
+'''
+'''
+1. Write a script that asks the user to input a number and then displays
+that number rounded to two decimal places. When run, your
+program should look like this:
+Enter a number: 5.432
+5.432 rounded to 2 decimal places is 5.43
+'''
+
+'''
+2. Write a script that asks the user to input a number and then displays
+the absolute value of that number. When run, your program
+should look like this:
+Enter a number: -10
+The absolute value of -10 is 10.0
+'''
+'''
+3. Write a script that asks the user to input two numbers by using the
+input() function twice, then display whether or not the difference
+between those two number is an integer. When run, your program should look like this:
+Enter a number: 1.5
+Enter another number: .5
+The difference between 1.5 and .5 is an integer? True!
+If the user inputs two numbers whose difference is not integral,
+the output should look like this:
+Enter a number: 1.5
+Enter another number: 1.0
+The difference between 1.5 and 1.0 is an integer? False!
+'''
