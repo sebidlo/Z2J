@@ -398,3 +398,4 @@ print(abs(-5.0))
 
 print(pow(2, 4))
 print(pow(2, -3))
+print(pow(2, 3, 2))  # 2 ** 8 % 2
