@@ -362,12 +362,40 @@ that has been provided by the user included below):
 n = 30
 m = 34
 print(f"{n * m}")
-'''
+
 num = input("Enter a number: ")
 num_2 = input("Enter a second number:")
 print("The product of number and second number is ",
       str(float(num) ** float(num_2)))
 
+
+num = input("Enter a number: ")
+num_2 = input("Enter a second number:")
+print("The product of number and second number is ",
+      str(float(num) + float(num_2)))
+
+
+print(round(2.5))
+print(round(3.5))
+
+
+When you round ties to even, you first look at the digit one decimal place to the left of the last digit in the tie. If that digit is even, you round down. If the digit is odd, you round up. That’s why 2.5 rounds down to 2 and 3.5 round up to 4. Rounding ties to even is the rounding strategy recommended for floating-point numbers by the IEEE (Institute of Electrical and Electronics Engineers) because it helps limit the impact rounding has on operations involving lots of numbers.
+The IEEE maintains a standard called IEEE 754 for how
+floating-point numbers are dealt with on a computer.
+It was published in 1985 and is still commonly used by hardware manufacturers today.
+Kiedy zaokrąglasz remisy do parzystych, najpierw patrzysz na cyfrę o jedno miejsce po przecinku na lewo od ostatniej cyfry remisu. Jeśli ta cyfra jest parzysta, zaokrąglasz w dół. Jeśli cyfra jest nieparzysta, zaokrąglasz w górę. Dlatego 2,5 zaokrągla w dół do 2, a 3,5 w górę do 4. Zaokrąglanie do parzystości jest strategią zaokrąglania liczb zmiennoprzecinkowych zalecaną przez IEEE (Instytut Inżynierów Elektryków i Elektroników), ponieważ pomaga ograniczyć wpływ zaokrąglania na operacje obejmujące dużo liczb.
+IEEE utrzymuje standard o nazwie IEEE 754 dotyczący sposobu
+liczby zmiennoprzecinkowe są obsługiwane na komputerze.
+Został opublikowany w 1985 roku i nadal jest powszechnie używany przez producentów sprzętu.
+
+
+print(round(3.14159, 3))
+print(round(2.71828, 2))
+
+print(abs(3))
+print(abs(-5.0))
 '''
 
-'''
+print(pow(2, 4))
+print(pow(2, -3))
+print(pow(2, 3, 2))  # 2 ** 8 % 2
