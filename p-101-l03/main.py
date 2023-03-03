@@ -411,7 +411,7 @@ that number rounded to two decimal places. When run, your
 program should look like this:
 Enter a number: 5.432
 5.432 rounded to 2 decimal places is 5.43
-'''
+
 number = input(
     "Podaj liczbę z kilkoma miejsczami po przecinku, ja zaokrągle ją do 2 miejsc: ")
 number2 = round(float(number), 2)
@@ -419,13 +419,17 @@ print(f" {number} routed to 2 decimal places is {number2}")
 # print(str(round(number, 2)))
 
 
-'''
 2. Write a script that asks the user to input a number and then displays
 the absolute value of that number. When run, your program
 should look like this:
 Enter a number: -10
 The absolute value of -10 is 10.0
 '''
+number = input(
+    "Podaj liczbę z kilkoma miejsczami po przecinku, ja podam jej wartość bezwzgledną: ")
+number2 = abs(float(number))
+print(f"The absolute value of {number} is {number2}")
+
 '''
 3. Write a script that asks the user to input two numbers by using the
 input() function twice, then display whether or not the difference
