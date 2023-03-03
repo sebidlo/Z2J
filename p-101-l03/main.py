@@ -442,7 +442,7 @@ the output should look like this:
 Enter a number: 1.5
 Enter another number: 1.0
 The difference between 1.5 and 1.0 is an integer? False!
-'''
+
 print("Podaj dwie liczby, ja sprawdzę, czy różnica między nimi jest liczbą całkowitą.")
 number = input(
     "Podaj pierwszą liczbę: ")
@@ -454,3 +454,25 @@ n = number - number2
 
 print(
     f"The difference between {number} and {number2} is an integer {n.is_integer()}")
+
+'''
+# Print numbera in Style
+
+n = 7.126
+print(f"The value of n is {n} ")
+# {n:.2f}
+print(f"The value of n is {n:.2f}")
+print(f"The value of n is {n:.1f}")
+
+n = 1
+print(f"The value of n is {n} ")
+# {n:.2f}
+print(f"The value of n is {n:.2f}")
+print(f"The value of n is {n:.3f}")
+n = 1234567890
+print(f"The value of n is {n} ")
+# {n:.2f}
+print(f"The value of n is {n:.2f}")
+print(f"The value of n is {n:,}")
+n = 1234.56
+print(f"The value of n is {n:,.2f}")
