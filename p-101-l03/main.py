@@ -394,8 +394,63 @@ print(round(2.71828, 2))
 
 print(abs(3))
 print(abs(-5.0))
-'''
+
 
 print(pow(2, 4))
 print(pow(2, -3))
 print(pow(2, 3, 2))  # 2 ** 8 % 2
+
+n = 2.5
+print(n.is_integer())
+n = 2.0
+print(n.is_integer())
+'''
+'''
+1. Write a script that asks the user to input a number and then displays
+that number rounded to two decimal places. When run, your
+program should look like this:
+Enter a number: 5.432
+5.432 rounded to 2 decimal places is 5.43
+
+number = input(
+    "Podaj liczbę z kilkoma miejsczami po przecinku, ja zaokrągle ją do 2 miejsc: ")
+number2 = round(float(number), 2)
+print(f" {number} routed to 2 decimal places is {number2}")
+# print(str(round(number, 2)))
+
+
+2. Write a script that asks the user to input a number and then displays
+the absolute value of that number. When run, your program
+should look like this:
+Enter a number: -10
+The absolute value of -10 is 10.0
+
+number = input(
+    "Podaj liczbę z kilkoma miejsczami po przecinku, ja podam jej wartość bezwzgledną: ")
+number2 = abs(float(number))
+print(f"The absolute value of {number} is {number2}")
+
+
+3. Write a script that asks the user to input two numbers by using the
+input() function twice, then display whether or not the difference
+between those two number is an integer. When run, your program should look like this:
+Enter a number: 1.5
+Enter another number: .5
+The difference between 1.5 and .5 is an integer? True!
+If the user inputs two numbers whose difference is not integral,
+the output should look like this:
+Enter a number: 1.5
+Enter another number: 1.0
+The difference between 1.5 and 1.0 is an integer? False!
+'''
+print("Podaj dwie liczby, ja sprawdzę, czy różnica między nimi jest liczbą całkowitą.")
+number = input(
+    "Podaj pierwszą liczbę: ")
+number2 = input("podaj drugą liczbę: ")
+
+number = float(number)
+number2 = float(number2)
+n = number - number2
+
+print(
+    f"The difference between {number} and {number2} is an integer {n.is_integer()}")
