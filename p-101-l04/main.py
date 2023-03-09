@@ -34,7 +34,7 @@ help(multiply)
 turns the value of that number raised to the third power. Test the
 function by displaying the result of calling your cube() function on
 a few different numbers.
-'''
+
 def cube(x):
     potega_3 = x ** 3
     print(f"liczba {x} podniesiona do potegi 3 wynosi: {potega_3}")
@@ -44,12 +44,17 @@ cube(4)
 cube(25)
 
 
-'''
+
 2. Write a function called greet() that takes one string parameter
 called name and displays the text "Hello <name>!" , where <name> is
 replaced with the value of the name parameter.
-'''
+
 def greet(name):
     print(f"Hello {name} !")
 
 greet("Sebastian")
+
+'''
+6.3 Challenge: Convert Temperatures
+
+'''
