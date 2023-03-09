@@ -455,7 +455,6 @@ n = number - number2
 print(
     f"The difference between {number} and {number2} is an integer {n.is_integer()}")
 
-'''
 # Print numbera in Style
 
 n = 7.126
@@ -476,3 +475,24 @@ print(f"The value of n is {n:.2f}")
 print(f"The value of n is {n:,}")
 n = 1234.56
 print(f"The value of n is {n:,.2f}")
+
+# Review Exercises 5.7
+
+1. Print the result of the calculation 3 ** 0,125 with three decimal places.
+
+n = 3 ** 0.125 
+print(f"{n:.3f}")
+
+2. Print the number 150000 as currency, with the thousands grouped
+with commas. Currency should be displayed with two decimal
+places.
+
+currency = 150000
+print(f"{currency:,.2f}")
+
+3. Print the result of 2 / 10 as a percentage with no decimal places.
+The output should look like 20% .
+
+result = 2 / 10
+print(f"{result:.1%}")
+'''
