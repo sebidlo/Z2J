@@ -11,3 +11,10 @@ def multiply(x, y):
     # # Function body
     product = x * y
     return product
+    print("You can't see me!") # For instance, the print() function will never be executed in the following function !!!
+
+print(multiply(2,2))
+
+num = multiply(2,5)
+
+print(num)
