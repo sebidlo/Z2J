@@ -55,6 +55,7 @@ def greet(name):
 greet("Sebastian")
 
 '''
-6.3 Challenge: Convert Temperatures
-
-'''
+n = 1
+while n < 5:
+    print(n)
+    n = n + 1
