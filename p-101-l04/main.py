@@ -54,8 +54,18 @@ def greet(name):
 
 greet("Sebastian")
 
-'''
+
 n = 1
 while n < 5:
     print(n)
     n = n + 1
+'''
+for letter in "Python":
+    print(letter)
+
+
+word = "Python"
+index = 0
+while index < len(word):
+    print(word[index])
+    index = index + 1
