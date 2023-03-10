@@ -79,8 +79,45 @@ for n in range(10, 20):
 amount = float(input("Enter an amount: "))
 for num_people in range(2, 6):
     print(f"{num_people} people: ${amount / num_people:,.2f} each")
-'''
+
 for n in range(1, 4):
     for j in range(4, 7):
         print(f"n = {n} and j = {j}")
+Review Exercises 6.4
+'''
+'''
+1. Write a for loop that prints out the integers 2 through 10, each on
+a new line, by using the range() function.
+
+for n in range(1,11):
+    print(n)
+
+
+2. Use a while loop that prints out the integers 2 through 10 (Hint:
+You’ll need to create a new integer first.)
+
+m = 2
+while m <= 10:
+    print(m)
+    m = m + 1
+
+3. Write a function called doubles() that takes one number as its input
+and doubles that number. Then use the doubles() function in a
+loop to double the number 2 three times, displaying each result on
+a separate line. Here is some sample output:
+4
+8
+16
+'''
+def doubles(x):
+    x = x * 2
+    return x
+    #print(x)
+
+x = 2
+
+
+for j in range(0, 3):
+    x = doubles(x)
+    print(x)
 
