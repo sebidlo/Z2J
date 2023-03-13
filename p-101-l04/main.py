@@ -108,7 +108,7 @@ a separate line. Here is some sample output:
 4
 8
 16
-'''
+
 def doubles(x):
     x = x * 2
     return x
@@ -119,6 +119,6 @@ x = 2
 for j in range(0, 3):
     x = doubles(x)
     print(x)
-
+'''
     
 
