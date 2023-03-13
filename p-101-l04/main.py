@@ -120,5 +120,13 @@ for j in range(0, 3):
     x = doubles(x)
     print(x)
 '''
+x = 5
+def outer_func():
+    y = 3
+    
+    def inner_func():
+        z = x + y
+        return z
+    return inner_func()
     
 
