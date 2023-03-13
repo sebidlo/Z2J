@@ -5,6 +5,10 @@ print(num_letters)
 return_value = print("What do I return?")
 print(return_value)
 
+1. The function signature , which starts with the def keyword and
+includes the name of the function and the functions parameters
+2. The function body , which contains the code that runs whenever
+the function is called.
 
 def multiply(x, y):
     # Function signature
@@ -119,7 +123,7 @@ x = 2
 for j in range(0, 3):
     x = doubles(x)
     print(x)
-'''
+
 x = 5
 def outer_func():
     y = 3
@@ -129,7 +133,6 @@ def outer_func():
         return z
     return inner_func()
 
-'''
 This rule is an acronym for L ocal, E nclosing, G lobal, B uilt-in.
 
 Python resolves scope in the order in which each scope appears in the
@@ -175,5 +178,13 @@ jest zawarte we wbudowanym zakresie.
 
 
 '''
-    
+total = 0
+
+def add_to_total(n):
+    global total 
+    total = total + n
+
+add_to_total(5)
+print(total)
+
 
