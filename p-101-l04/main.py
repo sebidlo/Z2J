@@ -177,7 +177,7 @@ Wszystko, czego możesz użyć bez uprzedniego zdefiniowania siebie,
 jest zawarte we wbudowanym zakresie.
 
 
-'''
+
 total = 0
 
 def add_to_total(n):
@@ -187,4 +187,7 @@ def add_to_total(n):
 add_to_total(5)
 print(total)
 
-
+'''
+for i in range(1, 4):
+    j = i * 2
+    print(f"i is {i} and j is {j}")
