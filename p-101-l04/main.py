@@ -127,7 +127,7 @@ for j in range(0, 3):
 x = 5
 def outer_func():
     y = 3
-    
+
     def inner_func():
         z = x + y
         return z
@@ -153,8 +153,8 @@ from the local scope. If the local scope is an inner function, the enclos-
 ing scope is the scope of the outer function. If the scope is a top-level
 function, the enclosing scope is the same as the global scope.
 
-Załączając (E): Załączając zakres. To jest zakres o jeden poziom wyżej z zasięgu lokalnego. 
-Jeśli zakres lokalny jest funkcją wewnętrzną, zakres obejmujący jest zakresem funkcji zewnętrznej. 
+Załączając (E): Załączając zakres. To jest zakres o jeden poziom wyżej z zasięgu lokalnego.
+Jeśli zakres lokalny jest funkcją wewnętrzną, zakres obejmujący jest zakresem funkcji zewnętrznej.
 Jeśli zasięg jest funkcją najwyższego poziomu, zakres obejmujący jest taki sam jak zasięg globalny.
 
 Global (G): The global scope, which is the top-most scope in the
@@ -162,7 +162,7 @@ script. This contains all of the names defined in the script that are
 not contained in a function body.
 
 Globalny (G): Zasięg globalny, który jest najwyższym zakresem w
-scenariusz. Zawiera wszystkie nazwy zdefiniowane w skrypcie, 
+scenariusz. Zawiera wszystkie nazwy zdefiniowane w skrypcie,
 które są nie zawarte w treści funkcji.
 
 Built-in (B): The built-in scope contains all of the names, such as
@@ -171,9 +171,9 @@ abs() are in the built-in scope. Anything that you can use without first
 defining yourself is contained in the built-in scope.
 
 Wbudowany (B): Wbudowany zakres zawiera wszystkie nazwy,
-takie jak słowa kluczowe, które są wbudowane w Pythona. 
-Funkcje takie jak round() i abs() znajdują się we wbudowanym zakresie. 
-Wszystko, czego możesz użyć bez uprzedniego zdefiniowania siebie, 
+takie jak słowa kluczowe, które są wbudowane w Pythona.
+Funkcje takie jak round() i abs() znajdują się we wbudowanym zakresie.
+Wszystko, czego możesz użyć bez uprzedniego zdefiniowania siebie,
 jest zawarte we wbudowanym zakresie.
 
 
@@ -181,7 +181,7 @@ jest zawarte we wbudowanym zakresie.
 total = 0
 
 def add_to_total(n):
-    global total 
+    global total
     total = total + n
 
 add_to_total(5)
@@ -192,11 +192,15 @@ print(total)
     print(f"i is {i} and j is {j}")
 '''
 
+
 def add_underscores(word):
     new_word = "_"
     for i in range(0, len(word)):
-        new_word = word[i] + "_"
-        return new_word
+        # new_word = word[i] + "_" ## wrong
+        new_word = new_word + word[i] + "_"
+        # wrong (brak odstępu return niżej, wyjscie nie z pętli tylko z funkcji.)
+    return new_word
+
 
 phrase = "hello"
 print(add_underscores(phrase))
