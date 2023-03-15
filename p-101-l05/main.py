@@ -89,4 +89,10 @@ input() function, stores that input in a variable, and then displays
 whether the length of that string is less than 5 characters, greater
 than 5 characters, or equal to 5 characters by using a set of if , elif and else statements.
 '''
-
+word = input("wpisz jakies slowo: ")
+if len(word) == 5:
+    print(" słowo ma 5 znaków")
+elif len(word) < 5:
+    print("słowo ma mniej niz 5 znakow ")
+else:
+    print("slowo ma wiecej niz 5 znakow")
