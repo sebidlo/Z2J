@@ -190,7 +190,7 @@ print(total)
 
     j = i * 2
     print(f"i is {i} and j is {j}")
-'''
+
 
 
 def add_underscores(word):
@@ -198,6 +198,22 @@ def add_underscores(word):
     for i in range(0, len(word)):
         # new_word = word[i] + "_" ## wrong
         new_word = new_word + word[i] + "_"
+        # wrong (brak odstępu return niżej, wyjscie nie z pętli tylko z funkcji.)
+    return new_word
+
+
+phrase = "hello"
+print(add_underscores(phrase))
+
+'''
+
+
+def add_underscores(word):
+    new_word = "_"
+    for i in range(0, len(word)):
+        new_word = word[i] + "_"  # wrong
+        # alternatywnie lokalne  wyświatlanie zmiannych
+        print(f"i = {i}; new_word = {new_word}")
         # wrong (brak odstępu return niżej, wyjscie nie z pętli tylko z funkcji.)
     return new_word
 
