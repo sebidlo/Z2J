@@ -7,3 +7,10 @@
 '''    
 if 2 + 2 == 4:
     print("2 and 2 is 4")
+
+grade = 40
+
+if grade >= 70:
+    print("You passed the class!")
+
+print("Thank you for attending.")
