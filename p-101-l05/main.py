@@ -35,7 +35,9 @@ elif grade >= 70: # 4
 else: # 5
     print("You did not pass the class :(")
 print("Thanks for attending.") # 6
-'''
+
+
+
 sport = input("Enter a sport: ")    
 p1_score = int(input("Enter player 1 score: "))
 p2_score = int(input("Enter player 2 score: "))
@@ -56,5 +58,25 @@ elif sport.lower() == "golf":
     else:
         print("Player 2 wins.")
 # 3
+else:
+    print("Unknown sport")
+
+'''
+# refaktoring z uzyciem operatorów logicznych 
+sport = input("Enter a sport: ")    
+p1_score = int(input("Enter player 1 score: "))
+p2_score = int(input("Enter player 2 score: "))
+
+if p1_score == p2_score:
+    print("The game is a draw.")
+elif (sport.lower() == "basketball") or (sport.lower() == "golf"):
+    sport = sport.lower()
+    p1_wins_basketball = (sport == "basketball") and (p1_score > p2_score)
+    p1_wins_golf = (sport == "golf") and (p1_score < p2_score)
+    p1_wins = p1_wins_basketball or p1_wins_golf
+    if p1_wins:
+        print("Player 1 wins.")
+    else:
+        print("Player 2 wins.")
 else:
     print("Unknown sport")
