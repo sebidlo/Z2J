@@ -61,7 +61,7 @@ elif sport.lower() == "golf":
 else:
     print("Unknown sport")
 
-'''
+
 # refaktoring z uzyciem operatorów logicznych 
 sport = input("Enter a sport: ")    
 p1_score = int(input("Enter player 1 score: "))
@@ -80,3 +80,13 @@ elif (sport.lower() == "basketball") or (sport.lower() == "golf"):
         print("Player 2 wins.")
 else:
     print("Unknown sport")
+
+'''
+# Review Exercises 8.3
+'''
+Write a script that prompts the user to enter a word using the
+input() function, stores that input in a variable, and then displays
+whether the length of that string is less than 5 characters, greater
+than 5 characters, or equal to 5 characters by using a set of if , elif and else statements.
+'''
+
