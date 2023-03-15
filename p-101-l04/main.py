@@ -205,7 +205,20 @@ def add_underscores(word):
 phrase = "hello"
 print(add_underscores(phrase))
 
-'''
+
+def add_underscores(word):
+    new_word = "_"
+    for i in range(0, len(word)):
+        new_word = word[i] + "_"  # wrong
+        # alternatywnie lokalne  wyświatlanie zmiannych
+        print(f"i = {i}; new_word = {new_word}")
+        # wrong (brak odstępu return niżej, wyjscie nie z pętli tylko z funkcji.)
+    return new_word
+
+
+phrase = "hello"
+print(add_underscores(phrase))
+
 
 
 def add_underscores(word):
@@ -215,6 +228,18 @@ def add_underscores(word):
         # alternatywnie lokalne  wyświatlanie zmiannych
         print(f"i = {i}; new_word = {new_word}")
         # wrong (brak odstępu return niżej, wyjscie nie z pętli tylko z funkcji.)
+    return new_word
+
+One way to improve this loop is to iterate over the characters in the
+string word directly. Heres one way to do that:
+Jednym ze sposobów ulepszenia tej pętli jest bezpośrednie iterowanie znaków w słowie łańcuchowym. Oto jeden ze sposobów, aby to zrobić:
+'''
+
+
+def add_underscores(word):
+    new_word = "_"
+    for char in word:
+        new_word = new_word + char + "_"
     return new_word
 
 
