@@ -14,3 +14,12 @@ if grade >= 70:
     print("You passed the class!")
 
 print("Thank you for attending.")
+
+
+grade = 40
+if grade >= 70:
+    print("You passed the class!")
+else:
+    print("You did not pass the class :(")
+    
+print("Thank you for attending.")
