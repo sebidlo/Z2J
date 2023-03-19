@@ -204,3 +204,15 @@ File "<pyshell#3>", line 1, in <module>
 print(does_not_exist)
 NameError: name 'does_not_exist' is not defined
 '''
+'''
+ZeroDivisionError
+
+A ZeroDivisionError occurs when the divisor in a division operation is 0 :
+
+>>> 1 / 0
+
+Traceback (most recent call last):
+File "<pyshell#4>", line 1, in <module>
+1 / 0
+ZeroDivisionError: division by zero
+'''
