@@ -176,3 +176,18 @@ int("not a number")
 ValueError: invalid literal for int() with base 10: 'not a number'
 
 '''
+
+'''
+TypeError
+
+A TypeError occurs when an operation is performed on a value of the
+wrong type. For example, trying to add a string and an integer will
+result in a TypeError :
+
+>>> "1" + 2
+
+Traceback (most recent call last):
+File "<pyshell#1>", line 1, in <module>
+"1" + 2
+TypeError: can only concatenate str (not "int") to str
+'''
