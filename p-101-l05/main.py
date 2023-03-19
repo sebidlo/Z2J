@@ -141,24 +141,38 @@ for n in range(3):
 else:
     print("Suspicious activity. The authorities have been alerted.")
 
-'''
-'''
 Review Exercises 8.6
 
 1. Using break , write a program that repeatedly asks the user for some
 input and only quits if the user enters "q" or "Q" .
-'''
+
 for n in range(100):
     znak = input("Wpisz jakis znak z klawiatury: ")
     if znak == 'q':
         break
 
-'''
+
 2. Using continue , write a program that loops over the numbers 1 to
 50 and prints all numbers that are not multiples of 3 .
-'''
+
 
 for i in range(1, 50):
     if i % 3 == 0:
         continue
     print(i)
+'''
+'''
+ValueError
+
+A ValueError occurs when an operation encounters an invalid value.
+For example, trying to convert the string "not a number" to an integer
+results in a ValueError :
+
+>>> int("not a number")
+
+Traceback (most recent call last):
+File "<pyshell#1>", line 1, in <module>
+int("not a number")
+ValueError: invalid literal for int() with base 10: 'not a number'
+
+'''
