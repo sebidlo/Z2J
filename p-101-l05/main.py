@@ -123,7 +123,7 @@ for i in range(0, 4):
 
 print(f"Finished with i = {i}")
 
-'''
+
 # phrase = "it marks the spot"
 
 phrase = "X marks the spot"
@@ -132,3 +132,12 @@ for character in phrase:
         break
     else:
         print("There was no 'X' in the phrase")
+
+'''
+for n in range(3):
+    password = input("Password: ")
+    if password == "I<3Bieber":
+        break
+    print("Password is incorrect.")
+else:
+    print("Suspicious activity. The authorities have been alerted.")
