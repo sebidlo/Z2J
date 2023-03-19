@@ -107,7 +107,7 @@ for n in range(1, 100):
     if n % 2 == 0:
         sum_of_evens = sum_of_evens + n
 print(sum_of_evens)
-'''
+
 
 for n in range(0, 4):
     if n == 2:
@@ -120,5 +120,15 @@ for i in range(0, 4):
     if i == 2:
         continue
     print(i)
-    
+
 print(f"Finished with i = {i}")
+
+'''
+# phrase = "it marks the spot"
+
+phrase = "X marks the spot"
+for character in phrase:
+    if character == "X":
+        break
+    else:
+        print("There was no 'X' in the phrase")
