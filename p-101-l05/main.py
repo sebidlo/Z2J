@@ -216,3 +216,16 @@ File "<pyshell#4>", line 1, in <module>
 1 / 0
 ZeroDivisionError: division by zero
 '''
+'''
+OverflowError
+
+An OverflowError occurs when the result of an arithmetic operation is
+too large. For example, trying to raise the value 2.0 to the power 1_-000_000 results in an OverflowError :
+
+>>> pow(2.0, 1_000_000)
+
+Traceback (most recent call last):
+File "<pyshell#6>", line 1, in <module>
+pow(2.0, 1_000_000)
+OverflowError: (34, 'Result too large')
+'''
