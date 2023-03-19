@@ -229,3 +229,13 @@ File "<pyshell#6>", line 1, in <module>
 pow(2.0, 1_000_000)
 OverflowError: (34, 'Result too large')
 '''
+
+'''
+The try and except Keywords
+
+try:
+    number = int(input("Enter an integer: "))
+except ValueError:
+    print("That was not an integer")
+
+'''
