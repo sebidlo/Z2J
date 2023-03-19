@@ -191,3 +191,16 @@ File "<pyshell#1>", line 1, in <module>
 "1" + 2
 TypeError: can only concatenate str (not "int") to str
 '''
+'''
+NameError
+
+A NameError occurs when you try to use a variable name that hasn’t
+been defined yet:
+
+>>> print(does_not_exist)
+
+Traceback (most recent call last):
+File "<pyshell#3>", line 1, in <module>
+print(does_not_exist)
+NameError: name 'does_not_exist' is not defined
+'''
