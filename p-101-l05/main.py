@@ -258,6 +258,14 @@ is raised if the user did not enter an integer.
 Once the user enters an integer, the program should display
 the number back to the user and end without crashing.
 '''
+ok = True
+while ok is True:
+    try:
+        number = int(input("Enter an integer: "))
+        print(f" Your integer = {number} BAY")
+        ok = False
+    except ValueError:
+        print("That was not an integer")
 '''
 2. Write a program that asks the user to input a string and an integer
 n. Then display the character at index n in the string.
@@ -266,6 +274,3 @@ if the user does not enter an integer or the index is out of bounds.
 The program should display a different message depending on
 what error occurs.
 '''
-
-
-
