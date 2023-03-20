@@ -97,6 +97,157 @@ elif len(word) < 5:
 else:
     print("slowo ma wiecej niz 5 znakow")
 
+<<<<<<< HEAD
 
 8.4. Challenge: Find the Factors of a Number
+=======
+    
+8.4. Challenge: Find the Factors of a Number    
+
+
+sum_of_evens = 0
+for n in range(1, 100):
+    if n % 2 == 0:
+        sum_of_evens = sum_of_evens + n
+print(sum_of_evens)
+
+
+for n in range(0, 4):
+    if n == 2:
+        break
+    print(n)
+
+print(f"Finished with n = {n}")
+
+for i in range(0, 4):
+    if i == 2:
+        continue
+    print(i)
+
+print(f"Finished with i = {i}")
+
+
+# phrase = "it marks the spot"
+
+phrase = "X marks the spot"
+for character in phrase:
+    if character == "X":
+        break
+    else:
+        print("There was no 'X' in the phrase")
+
+for n in range(3):
+    password = input("Password: ")
+    if password == "I<3Bieber":
+        break
+    print("Password is incorrect.")
+else:
+    print("Suspicious activity. The authorities have been alerted.")
+
+Review Exercises 8.6
+
+1. Using break , write a program that repeatedly asks the user for some
+input and only quits if the user enters "q" or "Q" .
+
+for n in range(100):
+    znak = input("Wpisz jakis znak z klawiatury: ")
+    if znak == 'q':
+        break
+
+
+2. Using continue , write a program that loops over the numbers 1 to
+50 and prints all numbers that are not multiples of 3 .
+
+
+for i in range(1, 50):
+    if i % 3 == 0:
+        continue
+    print(i)
+>>>>>>> 858dce63b683323af9385435a63e78bf077f18a4
 '''
+'''
+ValueError
+
+A ValueError occurs when an operation encounters an invalid value.
+For example, trying to convert the string "not a number" to an integer
+results in a ValueError :
+
+>>> int("not a number")
+
+Traceback (most recent call last):
+File "<pyshell#1>", line 1, in <module>
+int("not a number")
+ValueError: invalid literal for int() with base 10: 'not a number'
+
+'''
+
+'''
+TypeError
+
+A TypeError occurs when an operation is performed on a value of the
+wrong type. For example, trying to add a string and an integer will
+result in a TypeError :
+
+>>> "1" + 2
+
+Traceback (most recent call last):
+File "<pyshell#1>", line 1, in <module>
+"1" + 2
+TypeError: can only concatenate str (not "int") to str
+'''
+'''
+NameError
+
+A NameError occurs when you try to use a variable name that hasn’t
+been defined yet:
+
+>>> print(does_not_exist)
+
+Traceback (most recent call last):
+File "<pyshell#3>", line 1, in <module>
+print(does_not_exist)
+NameError: name 'does_not_exist' is not defined
+'''
+'''
+ZeroDivisionError
+
+A ZeroDivisionError occurs when the divisor in a division operation is 0 :
+
+>>> 1 / 0
+
+Traceback (most recent call last):
+File "<pyshell#4>", line 1, in <module>
+1 / 0
+ZeroDivisionError: division by zero
+'''
+'''
+OverflowError
+
+An OverflowError occurs when the result of an arithmetic operation is
+too large. For example, trying to raise the value 2.0 to the power 1_-000_000 results in an OverflowError :
+
+>>> pow(2.0, 1_000_000)
+
+Traceback (most recent call last):
+File "<pyshell#6>", line 1, in <module>
+pow(2.0, 1_000_000)
+OverflowError: (34, 'Result too large')
+'''
+
+'''
+The try and except Keywords
+
+try:
+    number = int(input("Enter an integer: "))
+except ValueError:
+    print("That was not an integer")
+
+'''
+
+def divide(num1, num2):
+    try:
+        print(num1 / num2)
+    except TypeError:
+        print("Both arguments must be numbers")
+    except ZeroDivisionError:
+        print("num2 must not be 0")
