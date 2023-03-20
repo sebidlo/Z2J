@@ -4,7 +4,7 @@
 1. The if keyword
 2. A test condition, followed by a colon
 3. An indented block of code that is executed if the test condition is True
-    
+
 if 2 + 2 == 4:
     print("2 and 2 is 4")
 
@@ -38,7 +38,7 @@ print("Thanks for attending.") # 6
 
 
 
-sport = input("Enter a sport: ")    
+sport = input("Enter a sport: ")
 p1_score = int(input("Enter player 1 score: "))
 p2_score = int(input("Enter player 2 score: "))
 # 1
@@ -62,8 +62,8 @@ else:
     print("Unknown sport")
 
 
-# refaktoring z uzyciem operatorów logicznych 
-sport = input("Enter a sport: ")    
+# refaktoring z uzyciem operatorów logicznych
+sport = input("Enter a sport: ")
 p1_score = int(input("Enter player 1 score: "))
 p2_score = int(input("Enter player 2 score: "))
 
@@ -96,10 +96,11 @@ elif len(word) < 5:
     print("słowo ma mniej niz 5 znakow ")
 else:
     print("slowo ma wiecej niz 5 znakow")
-    
 
-    
-8.4. Challenge: Find the Factors of a Number    
+
+8.4. Challenge: Find the Factors of a Number
+
+8.4. Challenge: Find the Factors of a Number
 
 
 sum_of_evens = 0
@@ -216,3 +217,74 @@ File "<pyshell#4>", line 1, in <module>
 1 / 0
 ZeroDivisionError: division by zero
 '''
+'''
+OverflowError
+
+An OverflowError occurs when the result of an arithmetic operation is
+too large. For example, trying to raise the value 2.0 to the power 1_-000_000 results in an OverflowError :
+
+>>> pow(2.0, 1_000_000)
+
+Traceback (most recent call last):
+File "<pyshell#6>", line 1, in <module>
+pow(2.0, 1_000_000)
+OverflowError: (34, 'Result too large')
+'''
+
+'''
+The try and except Keywords
+
+try:
+    number = int(input("Enter an integer: "))
+except ValueError:
+    print("That was not an integer")
+
+
+
+
+def divide(num1, num2):
+    try:
+        print(num1 / num2)
+    except TypeError:
+        print("Both arguments must be numbers")
+    except ZeroDivisionError:
+        print("num2 must not be 0")
+
+8.7 Review Exercises
+
+1. Write a script that repeatedly asks the user to input an integer,
+displaying a message to “try again” by catching the ValueError that
+is raised if the user did not enter an integer.
+Once the user enters an integer, the program should display
+the number back to the user and end without crashing.
+
+ok = False
+while ok is False:
+    try:
+        number = int(input("Enter an integer: "))
+        print(f" Your integer = {number} BAY")
+        ok = True
+    except ValueError:
+        print("That was not an integer")
+
+2. Write a program that asks the user to input a string and an integer
+n. Then display the character at index n in the string.
+Use error handling to make sure the program doesn’t crash
+if the user does not enter an integer or the index is out of bounds.
+The program should display a different message depending on
+what error occurs.
+'''
+ok = False
+while ok is False:
+    try:
+        words = input("Enter a string: ")
+        number = int(input("Enter an integer as index the word: "))
+        if number <= len(words):
+            print(f"words are {len(words)} word")
+            print(f"word number {number} is  {words[number]}")
+            ok = False
+            # break
+    except ValueError:
+        print("That index is not an integer")
+    except OverflowError:
+        print("That index is out of bounds ")
