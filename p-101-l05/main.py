@@ -4,7 +4,7 @@
 1. The if keyword
 2. A test condition, followed by a colon
 3. An indented block of code that is executed if the test condition is True
-    
+
 if 2 + 2 == 4:
     print("2 and 2 is 4")
 
@@ -38,7 +38,7 @@ print("Thanks for attending.") # 6
 
 
 
-sport = input("Enter a sport: ")    
+sport = input("Enter a sport: ")
 p1_score = int(input("Enter player 1 score: "))
 p2_score = int(input("Enter player 2 score: "))
 # 1
@@ -62,8 +62,8 @@ else:
     print("Unknown sport")
 
 
-# refaktoring z uzyciem operatorów logicznych 
-sport = input("Enter a sport: ")    
+# refaktoring z uzyciem operatorów logicznych
+sport = input("Enter a sport: ")
 p1_score = int(input("Enter player 1 score: "))
 p2_score = int(input("Enter player 2 score: "))
 
@@ -96,8 +96,7 @@ elif len(word) < 5:
     print("słowo ma mniej niz 5 znakow ")
 else:
     print("slowo ma wiecej niz 5 znakow")
-    
 
-    
-8.4. Challenge: Find the Factors of a Number    
+
+8.4. Challenge: Find the Factors of a Number
 '''
