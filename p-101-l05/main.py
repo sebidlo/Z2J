@@ -258,12 +258,12 @@ is raised if the user did not enter an integer.
 Once the user enters an integer, the program should display
 the number back to the user and end without crashing.
 '''
-ok = True
-while ok is True:
+ok = False
+while ok is False:
     try:
         number = int(input("Enter an integer: "))
         print(f" Your integer = {number} BAY")
-        ok = False
+        ok = True
     except ValueError:
         print("That was not an integer")
 '''
