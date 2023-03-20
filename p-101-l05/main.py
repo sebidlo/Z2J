@@ -97,12 +97,10 @@ elif len(word) < 5:
 else:
     print("slowo ma wiecej niz 5 znakow")
 
-<<<<<<< HEAD
 
 8.4. Challenge: Find the Factors of a Number
-=======
-    
-8.4. Challenge: Find the Factors of a Number    
+
+8.4. Challenge: Find the Factors of a Number
 
 
 sum_of_evens = 0
@@ -163,7 +161,6 @@ for i in range(1, 50):
     if i % 3 == 0:
         continue
     print(i)
->>>>>>> 858dce63b683323af9385435a63e78bf077f18a4
 '''
 '''
 ValueError
@@ -243,6 +240,7 @@ except ValueError:
     print("That was not an integer")
 
 '''
+
 
 def divide(num1, num2):
     try:
