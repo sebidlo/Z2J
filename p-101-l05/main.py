@@ -275,16 +275,20 @@ The program should display a different message depending on
 what error occurs.
 '''
 ok = False
+words = input("Enter a string: ")
+
 while ok is False:
     try:
-        words = input("Enter a string: ")
         number = int(input("Enter an integer as index the word: "))
-        if number <= len(words):
-            print(f"words are {len(words)} word")
-            print(f"word number {number} is  {words[number]}")
-            ok = False
-            # break
+        zakres = range(0, len(words)-1)
+        # print(f"zakres to {zakres}")
+        number in zakres
+        # print(f"word number {number} is  {words[number]}")
+        ok = True
+
     except ValueError:
         print("That index is not an integer")
     except OverflowError:
         print("That index is out of bounds ")
+    except IndexError:
+        print("Index error")
