@@ -281,9 +281,9 @@ while ok is False:
     try:
         number = int(input("Enter an integer as index the word: "))
         zakres = range(0, len(words)-1)
-        # print(f"zakres to {zakres}")
-        number in zakres
-        # print(f"word number {number} is  {words[number]}")
+        print(f"zakres to {zakres}")
+        # number in zakres
+        print(f"word number {number} is  {words[number]}")
         ok = True
 
     except ValueError:
