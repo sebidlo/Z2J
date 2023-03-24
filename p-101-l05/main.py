@@ -273,18 +273,162 @@ Use error handling to make sure the program doesn’t crash
 if the user does not enter an integer or the index is out of bounds.
 The program should display a different message depending on
 what error occurs.
-'''
+
 ok = False
+words = input("Enter a string: ")
+
 while ok is False:
     try:
-        words = input("Enter a string: ")
         number = int(input("Enter an integer as index the word: "))
-        if number <= len(words):
-            print(f"words are {len(words)} word")
-            print(f"word number {number} is  {words[number]}")
-            ok = False
-            # break
+        zakres = range(0, len(words)-1)
+        print(f"zakres to {zakres}")
+        # number in zakres
+        print(f"word number {number} is  {words[number]}")
+        ok = True
+
     except ValueError:
         print("That index is not an integer")
     except OverflowError:
         print("That index is out of bounds ")
+    except IndexError:
+        print("Index error")
+
+        randpom module
+
+
+# import random
+print(random.randint(1, 10))
+
+# import random
+def coin_flip():
+    """Randomly return 'heads' or 'tails'."""
+    if random.randint(0, 1) == 0:
+        return "heads"
+    else:
+        return "tails"
+
+
+# First initialize the tallies to 0
+heads_tally = 0
+tails_tally = 0
+for trial in range(50_000):
+    if coin_flip() == "heads":
+        heads_tally = heads_tally + 1
+    else:
+        tails_tally = tails_tally + 1
+
+ratio = heads_tally / tails_tally
+print(f"The ratio of heads to tails is {ratio}")
+
+
+
+
+
+
+# import random
+def unfair_coin_flip(probability_of_tails):
+    if random.random() < probability_of_tails:
+        return "tails"
+    else:
+        return "heads"
+
+
+heads_tally = 0
+tails_tally = 0
+for trial in range(10_000):
+    if unfair_coin_flip(.7) == "heads":
+        heads_tally = heads_tally + 1
+    else:
+        tails_tally = tails_tally + 1
+
+ratio = heads_tally / tails_tally
+print(f"The ratio of heads to tails is {ratio}")
+
+#8.7 Review Exercises
+1. Write a function called roll() that uses the randint() function to
+simulate rolling a fair die by returning a random integer between
+1 and 6.
+
+
+
+
+
+# import random
+def roll():
+    return random.randint(1, 6)
+
+
+rolling_tally = 0
+# rolin_number = roll()
+# print(f"wylosowano {rolin_number}")
+
+
+2. Write a script that simulates 10,000 rolls of a fair die and displays
+the average number rolled.
+
+
+for rolling in range(10_000):
+    rolin_number = roll()
+    rolling_tally = rolling_tally + rolin_number
+
+print(f"po 10_000 rutow ")
+print(f"suma wurzuconych oczek = {rolling_tally}")
+avenge_value = rolling_tally / 10_000
+print(f"średnio wyrzuconi:  {avenge_value:.0f}")
+'''
+
+# 8.8 Challenge: Simulate a Coin Toss Experiment
+'''
+
+Suppose you flip a fair coin repeatedly until it lands on both heads and tails at least once each.
+In other words, after the first flip, you continue to flip the coin until it lands on something different.
+Doing this generates a sequence of heads and tails. For example,
+the first time you do this experiment, the sequence might be heads, heads, then tails.
+On average, how many flips are needed for the sequence to contain
+both heads and tails?
+Write a simulation that runs 10,000 trials of the experiment and
+prints the average number of flips per trial.
+
+Załóżmy, że wielokrotnie rzucasz uczciwą monetą
+dopóki nie wyląduje na 2x orzel  i 1x reszka co najmniej raz.
+Innymi słowy, po pierwszym odwróceniu,
+kontynuujesz rzucanie monetą, aż wyląduje na czymś innym.
+Spowoduje to wygenerowanie sekwencji orłów i reszek. Na przykład
+gdy przeprowadzasz ten eksperyment po raz pierwszy, sekwencja może wyglądać orzeł, orzeł, a następnie reszka.
+Średnio, ile przewrotów jest potrzebnych, aby sekwencja się zawierała
+2x orzeł  i 1x reszka?
+Napisz symulację, która przeprowadzi 10 000 prób eksperymentu i
+drukuje średnią liczbę rzutów na próbę.
+
+'''
+
+
+
+
+import random
+def coin_flip():
+    """Randomly return 'heads' or 'tails'."""
+    if random.randint(0, 1) == 0:
+        return "heads"
+    else:
+        return "tails"
+
+
+# First initialize the tallies to 0
+heads_tally = 0  # liczba orlow
+tails_tally = 0  # lizcba reszek
+sequence_sum = 0  # ile razy wypadla sekwencja: orzel, orzel, reszka
+sequence = 0
+for trial in range(10_000):
+    if coin_flip() == "heads":
+        heads_tally = heads_tally + 1
+        sequence = sequence + 1
+    else:
+        tails_tally = tails_tally + 1
+        if sequence >= 2:
+            sequence_sum = sequence_sum + 1
+            sequence = 0
+
+ratio = sequence_sum / 10_000
+print(f"sequences (heads, heads, tails) were drawn {sequence_sum}")
+print(f"The ratio of seqence (heads, heads, tails) to trials is {ratio:.0%}")
