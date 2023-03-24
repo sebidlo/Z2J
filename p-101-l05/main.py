@@ -320,12 +320,12 @@ for trial in range(50_000):
 ratio = heads_tally / tails_tally
 print(f"The ratio of heads to tails is {ratio}")
 
-'''
 
 
 
 
-import random
+
+# import random
 def unfair_coin_flip(probability_of_tails):
     if random.random() < probability_of_tails:
         return "tails"
@@ -343,3 +343,13 @@ for trial in range(10_000):
 
 ratio = heads_tally / tails_tally
 print(f"The ratio of heads to tails is {ratio}")
+
+#8.7 Review Exercises
+1. Write a function called roll() that uses the randint() function to
+simulate rolling a fair die by returning a random integer between
+1 and 6.
+'''
+'''
+2. Write a script that simulates 10,000 rolls of a fair die and displays
+the average number rolled.
+'''
