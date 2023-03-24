@@ -315,7 +315,7 @@ def coin_flip():
 # First initialize the tallies to 0
 heads_tally = 0
 tails_tally = 0
-for trial in range(10_000):
+for trial in range(50_000):
     if coin_flip() == "heads":
         heads_tally = heads_tally + 1
     else:
