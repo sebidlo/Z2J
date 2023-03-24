@@ -415,13 +415,20 @@ def coin_flip():
 
 
 # First initialize the tallies to 0
-heads_tally = 0
-tails_tally = 0
+heads_tally = 0  # liczba orlow
+tails_tally = 0  # lizcba reszek
+sequence_sum = 0  # ile razy wypadla sekwencja: orzel, orzel, reszka
+sequence = 0
 for trial in range(10_000):
     if coin_flip() == "heads":
         heads_tally = heads_tally + 1
+        sequence = sequence + 1
     else:
         tails_tally = tails_tally + 1
+        if sequence >= 2:
+            sequence_sum = sequence_sum + 1
+            sequence = 0
 
-ratio = heads_tally / tails_tally
-print(f"The ratio of heads to tails is {ratio}")
+ratio = sequence_sum / 10_000
+print(f"sequences (heads, heads, tails) were drawn {sequence_sum}")
+print(f"The ratio of seqence (heads, heads, tails) to trials is {ratio:.0%}")
