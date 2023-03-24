@@ -349,7 +349,29 @@ print(f"The ratio of heads to tails is {ratio}")
 simulate rolling a fair die by returning a random integer between
 1 and 6.
 '''
+
+
+
+
+import random
+def roll():
+    return random.randint(1, 6)
+
+
+rolling_tally = 0
+# rolin_number = roll()
+# print(f"wylosowano {rolin_number}")
+
 '''
 2. Write a script that simulates 10,000 rolls of a fair die and displays
 the average number rolled.
 '''
+
+for rolling in range(10_000):
+    rolin_number = roll()
+    rolling_tally = rolling_tally + rolin_number
+
+print(f"po 10_000 rutow ")
+print(f"suma wurzuconych oczek = {rolling_tally}")
+avenge_value = rolling_tally / 10_000
+print(f"średnio wyrzuconi:  {avenge_value:.0f}")
