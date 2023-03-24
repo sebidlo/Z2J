@@ -273,7 +273,7 @@ Use error handling to make sure the program doesn’t crash
 if the user does not enter an integer or the index is out of bounds.
 The program should display a different message depending on
 what error occurs.
-'''
+
 ok = False
 words = input("Enter a string: ")
 
@@ -292,3 +292,9 @@ while ok is False:
         print("That index is out of bounds ")
     except IndexError:
         print("Index error")
+
+        randpom module
+
+'''
+import random
+print(random.randint(1, 10))
