@@ -459,3 +459,6 @@ for vowel in vowels:
 coordinates = 4.21, 9.29
 print(type(coordinates))
 
+x, y = coordinates
+print(x)
+print(y)
