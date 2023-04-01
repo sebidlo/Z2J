@@ -400,7 +400,7 @@ gdy przeprowadzasz ten eksperyment po raz pierwszy, sekwencja może wyglądać o
 Napisz symulację, która przeprowadzi 10 000 prób eksperymentu i
 drukuje średnią liczbę rzutów na próbę.
 
-'''
+
 
 
 
@@ -432,3 +432,10 @@ for trial in range(10_000):
 ratio = sequence_sum / 10_000
 print(f"sequences (heads, heads, tails) were drawn {sequence_sum}")
 print(f"The ratio of seqence (heads, heads, tails) to trials is {ratio:.0%}")
+'''
+
+# Chapter 9 Tuples, Lists, and Dictionaries
+
+my_first_tuple = (1, 2, 3)
+print(my_first_tuple)
+print(type(my_first_tuple))
