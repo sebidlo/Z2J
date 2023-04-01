@@ -448,3 +448,4 @@ print(len(numbers))
 name = "David"
 print(name)
 print(name[1])
+print(name[2:4])
