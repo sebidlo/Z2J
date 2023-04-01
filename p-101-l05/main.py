@@ -432,7 +432,7 @@ for trial in range(10_000):
 ratio = sequence_sum / 10_000
 print(f"sequences (heads, heads, tails) were drawn {sequence_sum}")
 print(f"The ratio of seqence (heads, heads, tails) to trials is {ratio:.0%}")
-'''
+
 
 # Chapter 9 Tuples, Lists, and Dictionaries
 
@@ -449,3 +449,9 @@ name = "David"
 print(name)
 print(name[1])
 print(name[2:4])
+'''
+
+vowels = ("a", "e", "i", "o", "u")
+for vowel in vowels:
+    print(vowel.upper())
+
