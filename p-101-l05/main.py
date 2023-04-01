@@ -473,8 +473,36 @@ vowels = ("a", "e", "i", "o", "u")
 print("o" in vowels)
 print("x" in vowels)
 
-'''
 def adder_subtractor(num1, num2):
     return (num1 + num2, num1 - num2)
 ...
 print(adder_subtractor(3, 2))
+
+'''
+
+#9.2. Review Exercises
+'''
+1. Create a tuple literal named cardinal_numbers that holds the strings
+"first" , "second" and "third" , in that order.
+'''
+'''
+2. Using index notation and print() , display the string at index 1 in
+cardinal_numbers .
+'''
+'''
+3. Unpack the values in cardinal_numbers into three new strings
+named position1 , position2 and position3 in a single line of code,
+then print each value on a separate line.
+'''
+'''
+4. Create a tuple called my_name that contains the letters of your name
+by using tuple() and a string literal.
+'''
+'''
+5. Check whether or not the character keyword. "x" is in my_name using the in
+'''
+'''
+6. Create a new tuple containing all but the first letter in my_name using
+slicing notation.
+'''
+
