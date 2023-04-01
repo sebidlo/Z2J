@@ -462,3 +462,8 @@ print(type(coordinates))
 x, y = coordinates
 print(x)
 print(y)
+
+name, age, occupation = "David", 34, "programmer"
+print(name)
+print(age)
+print(occupation)
