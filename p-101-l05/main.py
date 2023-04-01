@@ -449,9 +449,13 @@ name = "David"
 print(name)
 print(name[1])
 print(name[2:4])
-'''
+
 
 vowels = ("a", "e", "i", "o", "u")
 for vowel in vowels:
     print(vowel.upper())
+
+'''
+coordinates = 4.21, 9.29
+print(type(coordinates))
 
