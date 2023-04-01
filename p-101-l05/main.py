@@ -455,7 +455,7 @@ vowels = ("a", "e", "i", "o", "u")
 for vowel in vowels:
     print(vowel.upper())
 
-'''
+
 coordinates = 4.21, 9.29
 print(type(coordinates))
 
@@ -467,3 +467,8 @@ name, age, occupation = "David", 34, "programmer"
 print(name)
 print(age)
 print(occupation)
+
+'''
+vowels = ("a", "e", "i", "o", "u")
+print("o" in vowels)
+print("x" in vowels)
