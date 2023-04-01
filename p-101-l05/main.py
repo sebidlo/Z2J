@@ -400,7 +400,7 @@ gdy przeprowadzasz ten eksperyment po raz pierwszy, sekwencja może wyglądać o
 Napisz symulację, która przeprowadzi 10 000 prób eksperymentu i
 drukuje średnią liczbę rzutów na próbę.
 
-'''
+
 
 
 
@@ -432,3 +432,95 @@ for trial in range(10_000):
 ratio = sequence_sum / 10_000
 print(f"sequences (heads, heads, tails) were drawn {sequence_sum}")
 print(f"The ratio of seqence (heads, heads, tails) to trials is {ratio:.0%}")
+
+
+# Chapter 9 Tuples, Lists, and Dictionaries
+
+my_first_tuple = (1, 2, 3)
+print(my_first_tuple)
+print(type(my_first_tuple))
+
+print(tuple("Python"))
+
+numbers = (1, 2, 3)
+print(len(numbers))
+
+name = "David"
+print(name)
+print(name[1])
+print(name[2:4])
+
+
+vowels = ("a", "e", "i", "o", "u")
+for vowel in vowels:
+    print(vowel.upper())
+
+
+coordinates = 4.21, 9.29
+print(type(coordinates))
+
+x, y = coordinates
+print(x)
+print(y)
+
+name, age, occupation = "David", 34, "programmer"
+print(name)
+print(age)
+print(occupation)
+
+
+vowels = ("a", "e", "i", "o", "u")
+print("o" in vowels)
+print("x" in vowels)
+
+def adder_subtractor(num1, num2):
+    return (num1 + num2, num1 - num2)
+...
+print(adder_subtractor(3, 2))
+
+'''
+
+#9.2. Review Exercises
+'''
+1. Create a tuple literal named cardinal_numbers that holds the strings
+"first" , "second" and "third" , in that order.
+'''
+cardinal_numbers = "first", "second", "third" 
+
+'''
+2. Using index notation and print() , display the string at index 1 in
+cardinal_numbers .
+'''
+print(cardinal_numbers[1])
+
+'''
+3. Unpack the values in cardinal_numbers into three new strings
+named position1 , position2 and position3 in a single line of code,
+then print each value on a separate line.
+'''
+position1, position2, position3 = cardinal_numbers
+
+print(position1)
+print(position2)
+print(position3)
+'''
+4. Create a tuple called my_name that contains the letters of your name
+by using tuple() and a string literal.
+'''
+
+my_name = tuple("Sebastian")
+
+'''
+5. Check whether or not the character keyword. "x" is in my_name using the in
+'''
+print("x" in my_name)
+
+'''
+6. Create a new tuple containing all but the first letter in my_name using
+slicing notation.
+'''
+my_name_2 = my_name[1:]
+
+print(my_name_2)
+
+
