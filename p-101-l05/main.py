@@ -444,3 +444,7 @@ print(tuple("Python"))
 
 numbers = (1, 2, 3)
 print(len(numbers))
+
+name = "David"
+print(name)
+print(name[1])
