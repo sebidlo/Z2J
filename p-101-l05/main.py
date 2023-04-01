@@ -439,3 +439,5 @@ print(f"The ratio of seqence (heads, heads, tails) to trials is {ratio:.0%}")
 my_first_tuple = (1, 2, 3)
 print(my_first_tuple)
 print(type(my_first_tuple))
+
+print(tuple("Python"))
