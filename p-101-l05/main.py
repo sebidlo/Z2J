@@ -468,7 +468,13 @@ print(name)
 print(age)
 print(occupation)
 
-'''
+
 vowels = ("a", "e", "i", "o", "u")
 print("o" in vowels)
 print("x" in vowels)
+
+'''
+def adder_subtractor(num1, num2):
+    return (num1 + num2, num1 - num2)
+...
+print(adder_subtractor(3, 2))
