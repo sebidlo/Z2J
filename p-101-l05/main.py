@@ -441,3 +441,6 @@ print(my_first_tuple)
 print(type(my_first_tuple))
 
 print(tuple("Python"))
+
+numbers = (1, 2, 3)
+print(len(numbers))
