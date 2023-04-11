@@ -524,4 +524,19 @@ my_name_2 = my_name[1:]
 print(my_name_2)
 
 '''
+# create list literal
+colors = ["red", "yellow", "green", "blue"]
+print(colors)
+print(type(colors))
 
+# create list[] function list()
+print(list((1, 2, 3)))
+text = list("Python")
+print(text)
+# ['P', 'y', 't', 'h', 'o', 'n']
+
+# create list[] method .split()
+groceries = "eggs, milk, cheese"
+grocery_list = groceries.split(", ")
+print(grocery_list)
+# ['eggs', 'milk', 'cheese']
