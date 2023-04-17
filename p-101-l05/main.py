@@ -581,3 +581,14 @@ print(colors)
 colors.insert(-1, "indigo")
 print("-1")
 print(colors)
+# ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'indigo', 'violet']
+
+
+# remove elements
+colors.pop(3)
+print(colors)
+# ['red', 'orange', 'yellow', 'blue', 'indigo', 'indigo', 'violet']
+# colors.pop(-10) IndexError: OUT OF RENGE
+colors.pop(-1)
+print(colors)
+# ['red', 'orange', 'yellow', 'blue', 'indigo', 'indigo']
