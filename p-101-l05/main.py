@@ -573,7 +573,11 @@ print(colors)
 colors.insert(10, "violet")
 print(colors)
 # ['red', 'orange', 'yellow', 'green', 'blue', 'violet']
+
 colors.insert(-1, "indigo")
 print(colors)
 # ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet']
 
+colors.insert(-1, "indigo")
+print("-1")
+print(colors)
