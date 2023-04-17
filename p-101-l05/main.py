@@ -600,3 +600,6 @@ print(colors)
 
 colors.append("violet")
 print(colors)
+
+colors.extend(["violet", "ultraviolet"])
+print(colors)
