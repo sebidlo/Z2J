@@ -595,3 +595,8 @@ print(colors)
 colors.pop()
 print(colors)
 # ['red', 'orange', 'yellow', 'blue', 'indigo']
+
+# add elements 
+
+colors.append("violet")
+print(colors)
