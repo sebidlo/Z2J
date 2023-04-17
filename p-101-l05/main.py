@@ -592,3 +592,6 @@ print(colors)
 colors.pop(-1)
 print(colors)
 # ['red', 'orange', 'yellow', 'blue', 'indigo', 'indigo']
+colors.pop()
+print(colors)
+# ['red', 'orange', 'yellow', 'blue', 'indigo']
