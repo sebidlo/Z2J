@@ -534,7 +534,7 @@ print(list((1, 2, 3)))
 text = list("Python")
 print(text)
 # ['P', 'y', 't', 'h', 'o', 'n']
-'''
+
 # create list[] method .split()
 groceries = "eggs, milk, cheese"
 grocery_list = groceries.split(", ")
@@ -542,3 +542,61 @@ print(grocery_list)
 # ['eggs', 'milk', 'cheese']
 
 
+numbers = [1, 2, 3, 4, 5, 6]
+
+for numer in numbers:
+    if numer % 2 == 0:
+        print(numer)
+        
+
+# Changing Elements in a List
+colors = ["red", "yellow", "green", "blue"]
+colors[0] = "burgundy"
+print(colors)
+
+colors[1:3] = ["orange", "magenta"]
+print(colors)
+# ['burgundy', 'orange', 'magenta', 'blue']
+
+colors = ["red", "yellow", "green", "blue"]
+colors[1:3] = ["orange", "magenta", "aqua"]
+print(colors)
+# ['red', 'orange', 'magenta', 'aqua', 'blue']
+
+colors[1:4] = ["yellow", "green"]
+print(colors)
+
+'''
+colors = ["red", "yellow", "green", "blue"]
+colors.insert(1, "orange")
+print(colors)
+colors.insert(10, "violet")
+print(colors)
+# ['red', 'orange', 'yellow', 'green', 'blue', 'violet']
+
+colors.insert(-1, "indigo")
+print(colors)
+# ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet']
+
+colors.insert(-1, "indigo")
+print("-1")
+print(colors)
+# ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'indigo', 'violet']
+
+
+# remove elements
+colors.pop(3)
+print(colors)
+# ['red', 'orange', 'yellow', 'blue', 'indigo', 'indigo', 'violet']
+# colors.pop(-10) IndexError: OUT OF RENGE
+colors.pop(-1)
+print(colors)
+# ['red', 'orange', 'yellow', 'blue', 'indigo', 'indigo']
+colors.pop()
+print(colors)
+# ['red', 'orange', 'yellow', 'blue', 'indigo']
+
+# add elements 
+
+colors.append("violet")
+print(colors)
