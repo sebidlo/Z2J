@@ -541,10 +541,28 @@ grocery_list = groceries.split(", ")
 print(grocery_list)
 # ['eggs', 'milk', 'cheese']
 
-'''
+
 numbers = [1, 2, 3, 4, 5, 6]
 
 for numer in numbers:
     if numer % 2 == 0:
         print(numer)
         
+
+# Changing Elements in a List
+colors = ["red", "yellow", "green", "blue"]
+colors[0] = "burgundy"
+print(colors)
+
+colors[1:3] = ["orange", "magenta"]
+print(colors)
+# ['burgundy', 'orange', 'magenta', 'blue']
+
+'''
+colors = ["red", "yellow", "green", "blue"]
+colors[1:3] = ["orange", "magenta", "aqua"]
+print(colors)
+# ['red', 'orange', 'magenta', 'aqua', 'blue']
+
+colors[1:4] = ["yellow", "green"]
+print(colors)
