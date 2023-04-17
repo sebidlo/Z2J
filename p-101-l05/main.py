@@ -566,7 +566,7 @@ print(colors)
 colors[1:4] = ["yellow", "green"]
 print(colors)
 
-'''
+
 colors = ["red", "yellow", "green", "blue"]
 colors.insert(1, "orange")
 print(colors)
@@ -600,3 +600,38 @@ print(colors)
 
 colors.append("violet")
 print(colors)
+
+colors.extend(["violet", "ultraviolet"])
+print(colors)
+
+'''
+# Lists of Numbers
+
+nums = [1, 2, 3, 4, 5]
+total = 0
+for number in nums:
+    total = total + number
+    
+print(total)
+
+print( sum([1, 2, 3, 4, 5]))
+print( max([1, 2, 3, 4, 5]))
+print( min([1, 2, 3, 4, 5]))
+
+
+
+squares = []
+for num in nums:
+    squares.append(num**2)
+print(squares)
+
+numbers = (1, 2, 3, 4, 5)
+squares = [num**2 for num in numbers]
+print(squares)
+# [1, 4, 9, 16, 25]
+
+# pull ...
+
+str_numbers = ["1.5", "2.3", "5.25"]
+float_numbers = [float(value) for value in str_numbers]
+print(float_numbers)
