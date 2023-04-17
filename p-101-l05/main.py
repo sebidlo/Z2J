@@ -631,3 +631,7 @@ print(squares)
 # [1, 4, 9, 16, 25]
 
 # pull ...
+
+str_numbers = ["1.5", "2.3", "5.25"]
+float_numbers = [float(value) for value in str_numbers]
+print(float_numbers)
