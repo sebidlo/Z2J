@@ -617,3 +617,15 @@ print(total)
 print( sum([1, 2, 3, 4, 5]))
 print( max([1, 2, 3, 4, 5]))
 print( min([1, 2, 3, 4, 5]))
+
+
+
+squares = []
+for num in nums:
+    squares.append(num**2)
+print(squares)
+
+numbers = (1, 2, 3, 4, 5)
+squares = [num**2 for num in numbers]
+print(squares)
+# [1, 4, 9, 16, 25]
