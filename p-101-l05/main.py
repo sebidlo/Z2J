@@ -558,7 +558,6 @@ colors[1:3] = ["orange", "magenta"]
 print(colors)
 # ['burgundy', 'orange', 'magenta', 'blue']
 
-'''
 colors = ["red", "yellow", "green", "blue"]
 colors[1:3] = ["orange", "magenta", "aqua"]
 print(colors)
@@ -566,3 +565,9 @@ print(colors)
 
 colors[1:4] = ["yellow", "green"]
 print(colors)
+
+'''
+colors = ["red", "yellow", "green", "blue"]
+colors.insert(1, "orange")
+print(colors)
+
