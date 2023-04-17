@@ -566,7 +566,7 @@ print(colors)
 colors[1:4] = ["yellow", "green"]
 print(colors)
 
-'''
+
 colors = ["red", "yellow", "green", "blue"]
 colors.insert(1, "orange")
 print(colors)
@@ -603,3 +603,13 @@ print(colors)
 
 colors.extend(["violet", "ultraviolet"])
 print(colors)
+
+'''
+# Lists of Numbers
+
+nums = [1, 2, 3, 4, 5]
+total = 0
+for number in nums:
+    total = total + number
+    
+print(total)
