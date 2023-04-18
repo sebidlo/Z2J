@@ -547,7 +547,7 @@ numbers = [1, 2, 3, 4, 5, 6]
 for numer in numbers:
     if numer % 2 == 0:
         print(numer)
-        
+
 
 # Changing Elements in a List
 colors = ["red", "yellow", "green", "blue"]
@@ -596,7 +596,7 @@ colors.pop()
 print(colors)
 # ['red', 'orange', 'yellow', 'blue', 'indigo']
 
-# add elements 
+# add elements
 
 colors.append("violet")
 print(colors)
@@ -604,14 +604,14 @@ print(colors)
 colors.extend(["violet", "ultraviolet"])
 print(colors)
 
-'''
+
 # Lists of Numbers
 
 nums = [1, 2, 3, 4, 5]
 total = 0
 for number in nums:
     total = total + number
-    
+
 print(total)
 
 print( sum([1, 2, 3, 4, 5]))
@@ -635,3 +635,4 @@ print(squares)
 str_numbers = ["1.5", "2.3", "5.25"]
 float_numbers = [float(value) for value in str_numbers]
 print(float_numbers)
+'''
