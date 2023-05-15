@@ -478,49 +478,200 @@ def adder_subtractor(num1, num2):
 ...
 print(adder_subtractor(3, 2))
 
-'''
+
 
 #9.2. Review Exercises
-'''
+
 1. Create a tuple literal named cardinal_numbers that holds the strings
 "first" , "second" and "third" , in that order.
-'''
-cardinal_numbers = "first", "second", "third" 
 
-'''
+cardinal_numbers = "first", "second", "third"
+
+
 2. Using index notation and print() , display the string at index 1 in
 cardinal_numbers .
-'''
+
 print(cardinal_numbers[1])
 
-'''
+
 3. Unpack the values in cardinal_numbers into three new strings
 named position1 , position2 and position3 in a single line of code,
 then print each value on a separate line.
-'''
+
 position1, position2, position3 = cardinal_numbers
 
 print(position1)
 print(position2)
 print(position3)
-'''
+
 4. Create a tuple called my_name that contains the letters of your name
 by using tuple() and a string literal.
-'''
+
 
 my_name = tuple("Sebastian")
 
-'''
+
 5. Check whether or not the character keyword. "x" is in my_name using the in
-'''
+
 print("x" in my_name)
 
-'''
+
 6. Create a new tuple containing all but the first letter in my_name using
 slicing notation.
-'''
+
 my_name_2 = my_name[1:]
 
 print(my_name_2)
 
 
+# create list literal
+colors = ["red", "yellow", "green", "blue"]
+print(colors)
+print(type(colors))
+
+# create list[] function list()
+print(list((1, 2, 3)))
+text = list("Python")
+print(text)
+# ['P', 'y', 't', 'h', 'o', 'n']
+
+# create list[] method .split()
+groceries = "eggs, milk, cheese"
+grocery_list = groceries.split(", ")
+print(grocery_list)
+# ['eggs', 'milk', 'cheese']
+
+
+numbers = [1, 2, 3, 4, 5, 6]
+
+for numer in numbers:
+    if numer % 2 == 0:
+        print(numer)
+
+
+# Changing Elements in a List
+colors = ["red", "yellow", "green", "blue"]
+colors[0] = "burgundy"
+print(colors)
+
+colors[1:3] = ["orange", "magenta"]
+print(colors)
+# ['burgundy', 'orange', 'magenta', 'blue']
+
+colors = ["red", "yellow", "green", "blue"]
+colors[1:3] = ["orange", "magenta", "aqua"]
+print(colors)
+# ['red', 'orange', 'magenta', 'aqua', 'blue']
+
+colors[1:4] = ["yellow", "green"]
+print(colors)
+
+
+colors = ["red", "yellow", "green", "blue"]
+colors.insert(1, "orange")
+print(colors)
+colors.insert(10, "violet")
+print(colors)
+# ['red', 'orange', 'yellow', 'green', 'blue', 'violet']
+
+colors.insert(-1, "indigo")
+print(colors)
+# ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet']
+
+colors.insert(-1, "indigo")
+print("-1")
+print(colors)
+# ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'indigo', 'violet']
+
+
+# remove elements
+colors.pop(3)
+print(colors)
+# ['red', 'orange', 'yellow', 'blue', 'indigo', 'indigo', 'violet']
+# colors.pop(-10) IndexError: OUT OF RENGE
+colors.pop(-1)
+print(colors)
+# ['red', 'orange', 'yellow', 'blue', 'indigo', 'indigo']
+colors.pop()
+print(colors)
+# ['red', 'orange', 'yellow', 'blue', 'indigo']
+
+# add elements
+
+colors.append("violet")
+print(colors)
+
+colors.extend(["violet", "ultraviolet"])
+print(colors)
+
+
+# Lists of Numbers
+
+nums = [1, 2, 3, 4, 5]
+total = 0
+for number in nums:
+    total = total + number
+
+print(total)
+
+print( sum([1, 2, 3, 4, 5]))
+print( max([1, 2, 3, 4, 5]))
+print( min([1, 2, 3, 4, 5]))
+
+
+
+squares = []
+for num in nums:
+    squares.append(num**2)
+print(squares)
+
+numbers = (1, 2, 3, 4, 5)
+squares = [num**2 for num in numbers]
+print(squares)
+# [1, 4, 9, 16, 25]
+
+# pull ...
+
+str_numbers = ["1.5", "2.3", "5.25"]
+float_numbers = [float(value) for value in str_numbers]
+print(float_numbers)
+'''
+'''
+1. Create a tuple literal named cardinal_numbers that holds the strings
+"first", "second" and "third", in that order.
+'''
+cardinal_numbers = "first", "second", "third" 
+print(cardinal_numbers)
+print(type(cardinal_numbers))
+
+'''
+2. Using index notation and print(), display the string at index 1 in
+cardinal_numbers.
+'''
+print(cardinal_numbers[1])
+
+'''
+3. Unpack the values in cardinal_numbers into three new strings
+named position1, position2 and position3 in a single line of code,
+then print each value on a separate line.
+'''
+position1, position2, position3 = cardinal_numbers
+print(position1)
+print(position2)
+print(position3)
+
+
+'''
+4. Create a tuple called my_name that contains the letters of your name
+by using tuple() and a string literal.
+'''
+my_name = tuple("sebastian")
+print(my_name)
+'''
+
+6. Create a new tuple containing all but the first letter in my_name using
+slicing notation.
+'''
+
+my_name_2 = my_name[1:]
+print(my_name_2)
