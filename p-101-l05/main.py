@@ -678,12 +678,31 @@ Review Exercises
 1. Create a tuple data with two values. The first value should be the
 tuple (1, 2) and the second value should be the tuple (3, 4).
 '''
+tuple_one = (1,2)
+tuple_two = (3,4)
+
+list_one = []
+print(list_one)
+list_one.append(tuple_one)
+print(list_one)
+list_one.append(tuple_two)
+print(list_one)
+print()
+
 '''
 2. Write a for loop that loops over data and prints the sum of each
 nested tuple. The output should look like this:
 Row 1 sum: 3
 Row 2 sum: 7
 '''
+for i in list_one:
+    print(i)
+
+j = 0
+for i in list_one:
+    j = j + 1
+    print(f"Sum rows {j} :", sum(i))
+
 '''
 3. Create the following list [4, 3, 2, 1] and assign it to the variable
 numbers.
